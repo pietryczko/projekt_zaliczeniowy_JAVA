@@ -2,16 +2,14 @@ package org.example.Client.Services;
 
 import org.example.Client.ClientBusiness;
 import org.example.Client.ClientPriv;
-import org.example.Service.ScannerSingleton;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ClientCreator {
 
     Scanner scanner = new Scanner(System.in);
 
-    public ClientBusiness createBusinessClient(){
+    public ClientBusiness createBusinessClient() {
         System.out.println("Podaj imię klienta: ");
         String name = scanner.nextLine();
 

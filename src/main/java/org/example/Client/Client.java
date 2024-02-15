@@ -5,7 +5,7 @@ public class Client {
     private String lastName;
     private int pesel;
 
-    public Client(String name, String lastName, int pesel){
+    public Client(String name, String lastName, int pesel) {
         this.name = name;
         this.lastName = lastName;
         this.pesel = pesel;

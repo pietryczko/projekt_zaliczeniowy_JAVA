@@ -13,11 +13,11 @@ public class ClientService {
     ClientCreator creator = new ClientCreator();
     Scanner scanner = ScannerSingleton.getInstance();
 
-    public Client addClient(){
+    public Client addClient() {
         System.out.println(
                 "Wybierz typ klienta:\n" +
-                "1.Klient Prywatny\n" +
-                "2.Klient Biznesowy\n");
+                        "1.Klient Prywatny\n" +
+                        "2.Klient Biznesowy\n");
 
         int num = scanner.nextInt();
 
@@ -28,7 +28,7 @@ public class ClientService {
                 return creator.createBusinessClient();
             default:
                 System.out.println("Podaj poprawną wartość!");
-                return  null;
+                return null;
         }
     }
 
@@ -53,7 +53,7 @@ public class ClientService {
                     if (client instanceof ClientPriv) {
                         System.out.println("Podaj numer klienta:\n");
                         ((ClientPriv) client).setClientNum(scanner.nextInt());
-                    } else if (client instanceof  ClientBusiness) {
+                    } else if (client instanceof ClientBusiness) {
                         System.out.println("Podaj NIP:\n");
                         ((ClientBusiness) client).setNip(scanner.nextInt());
                     }
@@ -77,12 +77,13 @@ public class ClientService {
 
         if (confirm == 1) {
             clients.remove(clients.get(client));
-        } else if(confirm == 2) {
+        } else if (confirm == 2) {
             System.out.println("Klient nie został usunięty :)");
         }
 
         return clients;
     }
+
     private void showOptions() {
         System.out.println(
                 "Co chcesz zaaktualizować:\n" +

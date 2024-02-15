@@ -1,6 +1,6 @@
 package org.example.Client;
 
-public class ClientBusiness extends Client{
+public class ClientBusiness extends Client {
     private int nip;
 
     public ClientBusiness(String name, String lastName, int pesel, int nip) {
